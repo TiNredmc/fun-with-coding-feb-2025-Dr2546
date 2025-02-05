@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+table {
+    width: 100vw;
+    height: 10vh;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    font-size: 2vw; 
+    border: 1px solid black;
+    width: 50%;
+}
+
+.first {
+    background-color: red; 
+}
+
+.second{
+    background-color: green; 
+}
