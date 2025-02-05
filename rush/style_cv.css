@@ -1,0 +1,112 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav container */
+.nav-container {
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    
+    z-index: 1000; /* Ensure it stays above other content */
+    padding: 20px 20px; /* Add some padding */
+}
+
+/* Nav button styling */
+.nav-button {
+    background-color: #0d57f7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: inline-block; /* Ensure the button behaves as a block */
+}
+
+.nav-button:hover {
+    background-color: #102dd3;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position below the button */
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    z-index: 1000;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show dropdown menu when active */
+.dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu li a {
+    background-color: #079afc; /* Default color */
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #9fd4f8; /* Slight white overlay on hover */
+    color: #0104d8;
+}
+
+/* Parallax sections */
+.parallax {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed; /* Creates the parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+/* Section 1 */
+.profile {
+    background-image: url('kmitl.jpg'); /* Replace with your image */
+}
+
+/* Section 1 */
+.experience {
+    background-image: url('kmitl2.jpg'); /* Replace with your image */
+}
+
+/* Section 1 */
+.contact {
+    background-image: url('kmitl3.jpg'); /* Replace with your image */
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Separator line */
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3); /* Light gray line */
+    margin: 0;
+}
